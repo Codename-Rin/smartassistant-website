@@ -1,0 +1,27 @@
+@import 'vendors/normalize';
+@import 'vendors/include-media';
+
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
+
+@import 'utilities/variables';
+@import 'utilities/mixins';
+@import 'utilities/reset';
+@import 'utilities/breakpoints';
+
+@import 'components/answer';
+
+body {
+	background-color: #fff;
+	//color: $color--text;
+	font-family: 'Lato', sans-serif;
+
+	*, *::after, *::before {
+		box-sizing: border-box;
+	}
+}
+
+.container {
+	max-width: 958px;
+	margin: 0 auto;
+	padding: 0 15px;
+}

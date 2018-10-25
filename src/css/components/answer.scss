@@ -1,0 +1,46 @@
+.answer {
+
+	&__list {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+	}
+
+	&__item {
+		width: calc((100% - 60px) / 4);
+	}
+
+	&__gfx {
+		img {
+			max-width: 100%;
+			display: block;
+		}
+	}
+
+	&__box {
+		min-height: 48px;
+		background-color: $color--gray;
+	}
+
+	&__info {
+		display: inline-block;
+		width: 16px;
+		height: 16px;
+		background-color: $color--purple;
+		border-radius: 16px;
+		position: relative;
+		vertical-align: middle;
+
+		&::after {
+			content: 'i';
+			position: absolute;
+			display: block;
+			line-height: 16px;
+			font-size: 13px;
+			color: #ffffff;
+			top: 0;
+			left: 5px;
+			font-weight: 700;
+		}
+	}
+}
