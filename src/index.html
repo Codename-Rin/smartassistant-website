@@ -5,80 +5,186 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Smartassistant Page</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
 </head>
 <body>
 	<div class="page">
 		<section class="headline">
 			<div class="container">
-				<button class="btn btn--start-new">Neu starten</button>
-				<h1 class="headline__title">Brillenberater</h1>
-				<h2 class="headline__subtitle">In wenigen Schritten zur perfekten Brille</h2>
+				<div class="headline__content">
+					<button class="btn btn--change" id="change-theme">Change Theme</button>
+					<button class="btn btn--start-new">Neu starten <i class="fas fa-redo-alt"></i></button>
+					<div class="headline__text">
+						<h1 class="headline__title">Brillenberater</h1>
+						<h2 class="headline__subtitle">In wenigen Schritten zur perfekten Brille</h2>
+					</div>
+				</div>
 			</div>
 		</section>
 		<section class="questions">
 			<div class="container">
-				<div class="question__single">
-					<h3 class="questions__headline">Welche Gesichtsform haben Sie?</h3>
-					<ul class="answer__list">
-						<li class="answer__item">
-							<div class="answer__gfx">
-								<img src="img/face-1.jpg" alt="Eckig">
-							</div>
-							<div class="answer__box">
-								<label for="eckig" class="answer__label">
-									<input type="checkbox" id="eckig" name="eckig">
-									Eckig
-								</label>
-								<i class="answer__info"></i>
-							</div>
-						</li>
-						<li class="answer__item">
-							<div class="answer__gfx">
-								<img src="img/face-2.jpg" alt="Rund">
-							</div>
-							<div class="answer__box">
-								<label for="rund" class="answer__label">
-									<input type="checkbox" id="rund" name="rund">
-									Rund
-								</label>
-								<i class="answer__info"></i>
-							</div>
-						</li>
-						<li class="answer__item">
-							<div class="answer__gfx">
-								<img src="img/face-3.jpg" alt="Oval">
-							</div>
-							<div class="answer__box">
-								<label for="oval" class="answer__label">
-									<input type="checkbox" id="oval" name="oval">
-									Oval
-								</label>
-								<i class="answer__info"></i>
-							</div>
-						</li>
-						<li class="answer__item">
-							<div class="answer__gfx">
-								<img src="img/face-4.jpg" alt="Herzförmig">
-							</div>
-							<div class="answer__box">
-								<label for="herzförmig" class="answer__label">
-									<input type="checkbox" id="herzförmig" name="herzförmig">
-									Herzförmig
-								</label>
-								<i class="answer__info"></i>
-							</div>
-						</li>
-					</ul>
+				<div id="product-slider">
+					<div class="slick-slide">
+						<div class="questions__single">
+							<h3 class="questions__headline">Welche Gesichtsform haben Sie?</h3>
+							<ul class="answer__list">
+								<li class="answer__item">
+									<div class="answer__gfx">
+										<img src="img/face-1.jpg" alt="Eckig">
+									</div>
+									<div class="answer__box">
+										<input type="checkbox" id="eckig" name="eckig">
+										<label for="eckig" class="answer__label">Eckig <i class="answer__info"></i></label>
+									</div>
+								</li>
+								<li class="answer__item">
+									<div class="answer__gfx">
+										<img src="img/face-2.jpg" alt="Rund">
+									</div>
+									<div class="answer__box">
+										<input type="checkbox" id="rund" name="rund">
+										<label for="rund" class="answer__label">Rund <i class="answer__info"></i></label>
+									</div>
+								</li>
+								<li class="answer__item">
+									<div class="answer__gfx">
+										<img src="img/face-3.jpg" alt="Oval">
+									</div>
+									<div class="answer__box">
+										<input type="checkbox" id="oval" name="oval">
+										<label for="oval" class="answer__label">Oval <i class="answer__info"></i></label>
+									</div>
+								</li>
+								<li class="answer__item">
+									<div class="answer__gfx">
+										<img src="img/face-4.jpg" alt="Herzförmig">
+									</div>
+									<div class="answer__box">
+										<input type="checkbox" id="herzförmig" name="herzförmig">
+										<label for="herzförmig" class="answer__label">Herzförmig <i class="answer__info"></i></label>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="slick-slide">
+						<div class="questions__single">
+							<ul class="answer__list">
+								<li class="answer__item">
+									<div class="answer__gfx">
+										<img src="img/face-1.jpg" alt="Eckig">
+									</div>
+									<div class="answer__box">
+										<label for="eckig" class="answer__label">
+											<input type="checkbox" id="eckig" name="eckig">
+											Eckig2
+										</label>
+										<i class="answer__info"></i>
+									</div>
+								</li>
+								<li class="answer__item">
+									<div class="answer__gfx">
+										<img src="img/face-2.jpg" alt="Rund">
+									</div>
+									<div class="answer__box">
+										<label for="rund" class="answer__label">
+											<input type="checkbox" id="rund" name="rund">
+											Rund2
+										</label>
+										<i class="answer__info"></i>
+									</div>
+								</li>
+								<li class="answer__item">
+									<div class="answer__gfx">
+										<img src="img/face-3.jpg" alt="Oval">
+									</div>
+									<div class="answer__box">
+										<label for="oval" class="answer__label">
+											<input type="checkbox" id="oval" name="oval">
+											Oval2
+										</label>
+										<i class="answer__info"></i>
+									</div>
+								</li>
+								<li class="answer__item">
+									<div class="answer__gfx">
+										<img src="img/face-4.jpg" alt="Herzförmig">
+									</div>
+									<div class="answer__box">
+										<label for="herzförmig" class="answer__label">
+											<input type="checkbox" id="herzförmig" name="herzförmig">
+											Herzförmig2
+										</label>
+										<i class="answer__info"></i>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
 				</div>
 				<div class="questions__nav">
-					<button class="questions__prev">Zuruck</button>
-					<button class="questions__next">Weiter</button>
+					<!-- <button class="questions__prev">Zuruck</button>
+					<button class="questions__next">Weiter</button> -->
 				</div>
 			</div>
 		</section>
 		<section class="products">
 			<div class="container">
 				<h4 class="products__head">Produkte die Ihren Wünschen entsprechen</h4>
+				<div class="product__list">
+					<div class="product">
+						<div class="product__gfx">
+							<img src="img/product-1.jpg" alt="Product">
+						</div>
+						<div class="product__details">
+							<h3 class="product__name">Funchal</h3>
+							<ul class="product__attributes">
+								<li class="product__attr">Brillentyp: Damen, Herren</li>
+								<li class="product__attr">Rahmentyp: Randlose Brille</li>
+								<li class="product__attr">Eckiger Rahmen</li>
+								<li class="product__attr">Ovaler Rahmen</li>
+								<li class="product__attr">Runder Rahmen</li>
+								<li class="product__attr">Still: casual, extravagant</li>
+								<li class="product__attr">Einstarkenbrille</li>
+								<li class="product__attr">Material: Metall</li>
+							</ul>
+							<a href="#" class="product__show-more">mehr Attribute anziegen</a>
+						</div>
+						<div class="product__utils">
+							<div class="product__price-box">
+								<span class="product__price-label">Rahmen inkl. Glaser &amp; Service</span>
+								<span class="product__price">ab 39.90 &euro;</span>
+							</div>
+							<button class="btn btn--sale">Zum Produkt</button>
+						</div>
+					</div>
+					<div class="product">
+						<div class="product__gfx">
+							<img src="img/product-1.jpg" alt="Product">
+						</div>
+						<div class="product__details">
+							<h3 class="product__name">Funchal</h3>
+							<ul class="product__attributes">
+								<li class="product__attr">Brillentyp: Damen, Herren</li>
+								<li class="product__attr">Rahmentyp: Randlose Brille</li>
+								<li class="product__attr">Eckiger Rahmen</li>
+								<li class="product__attr">Ovaler Rahmen</li>
+								<li class="product__attr">Runder Rahmen</li>
+								<li class="product__attr">Still: casual, extravagant</li>
+								<li class="product__attr">Einstarkenbrille</li>
+								<li class="product__attr">Material: Metall</li>
+							</ul>
+							<a href="#" class="product__show-more">mehr Attribute anziegen</a>
+						</div>
+						<div class="product__utils">
+							<div class="product__price-box">
+								<span class="product__price-label">Rahmen inkl. Glaser &amp; Service</span>
+								<span class="product__price">ab 149.90 &euro;</span>
+							</div>
+							<button class="btn btn--sale">Zum Produkt</button>
+						</div>
+					</div>
+				</div>
 			</div>
 		</section>
 	</div>

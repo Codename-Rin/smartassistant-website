@@ -1,0 +1,30 @@
+.questions {
+
+	&__headline {
+		font-size: 20px;
+		color: $color--purple;
+		text-align: center;
+		margin-bottom: 10px;
+	}
+
+	&__nav {
+		position: relative;
+		min-height: 40px;
+
+		.slick-prev {
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+
+		.slick-next {
+			position: absolute;
+			top: 0;
+			right: 0;
+		}
+	}
+
+	&__btn--hidden {
+		display: none !important;
+	}
+}

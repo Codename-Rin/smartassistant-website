@@ -1,0 +1,35 @@
+.btn {
+	cursor: pointer;
+	-webkit-appearance: none;
+	padding: 0;
+
+	&:focus {
+		outline: none;
+	}
+
+	&--start-new {
+		background-color: $color--purple-light;
+		position: absolute;
+		top: 0;
+		right: 0;
+		color: #ffffff;
+		font-weight: 700;
+		font-size: 14px;
+		padding: 9px 11px;
+
+		i {
+			transform: rotateY(180deg)
+		}
+	}
+
+	&--change {
+		background-color: $color--green-light;
+		position: absolute;
+		top: 0;
+		left: 0;
+		color: #ffffff;
+		font-weight: 700;
+		font-size: 14px;
+		padding: 9px 11px;
+	}
+}

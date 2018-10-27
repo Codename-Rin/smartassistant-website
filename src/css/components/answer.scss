@@ -20,6 +20,10 @@
 	&__box {
 		min-height: 48px;
 		background-color: $color--gray;
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		padding: 10px 12px;
 	}
 
 	&__info {

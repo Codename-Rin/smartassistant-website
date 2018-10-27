@@ -1,3 +1,4 @@
+@import url('https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css');
 @import 'vendors/normalize';
 @import 'vendors/include-media';
 
@@ -8,11 +9,18 @@
 @import 'utilities/reset';
 @import 'utilities/breakpoints';
 
+@import 'components/btn';
+@import 'components/headline';
+@import 'components/questions';
 @import 'components/answer';
+@import 'components/product';
+@import 'components/products';
+
+@import 'components/content';
 
 body {
 	background-color: #fff;
-	//color: $color--text;
+	color: $color--text;
 	font-family: 'Lato', sans-serif;
 
 	*, *::after, *::before {

@@ -1,0 +1,28 @@
+.headline {
+	margin-bottom: 12px;
+
+	&__content {
+		background: url('../img/banner.jpg') 50% 50% no-repeat;
+		background-size: cover;
+		min-height: 187px;
+		position: relative;
+		padding-top: 46px;
+	}
+
+	&__text {
+		background-color: rgba(255,255,255,.6);
+		padding: 16px 0;
+	}
+
+	&__title {
+		text-transform: uppercase;
+		font-weight: 300;
+		font-size: 46px;
+		color: $color--purple;
+	}
+
+	&__subtitle {
+		color: $color--purple;
+		font-size: 18px;
+	}
+}

@@ -1,0 +1,25 @@
+.content {
+
+	&--green {
+
+		.btn--start-new {
+			background-color: $color--green-light;
+		}
+
+		.btn--change {
+			background-color: $color--purple-light;
+		}
+
+		.answer__info {
+			background-color: $color--green;
+		}
+
+		.products__head {
+			background-color: $color--green;
+		}
+
+		.product__price {
+			color: $color--green;
+		}
+	}
+}
