@@ -32,4 +32,30 @@
 		font-size: 14px;
 		padding: 9px 11px;
 	}
+
+	&--sale {
+		background: linear-gradient(#3e9400 0%, #277200 100%);
+		color: #ffffff;
+		text-shadow: 1px 1px 0 #202020;
+		font-weight: 700;
+		font-size: 15px;
+		border-radius: 4px;
+		padding: 10px 4px;
+		width: 100%;
+
+		.fa-cart-arrow-down {
+			margin-right: 5px;
+		}
+
+		.fa-arrow-right {
+			margin-left: 5px;
+			width: 28px;
+			height: 28px;
+			border-radius: 28px;
+			line-height: 28px;
+			display: inline-block;
+			vertical-align: middle;
+			background: radial-gradient(transparent 0, transparent 45%, #194c00 100%);
+		}
+	}
 }

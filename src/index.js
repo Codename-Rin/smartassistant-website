@@ -7,7 +7,8 @@ const productSliderOpts = {
 	dots: false,
 	appendArrows: $('.questions__nav'),
 	prevArrow: '<button type="button" class="slick-prev questions__btn--hidden">Zuruck</button>',
-	nextArrow: '<button type="button" class="slick-next">Weiter</button>'
+	nextArrow: '<button type="button" class="slick-next">Weiter</button>',
+	adaptiveHeight: true
 }
 
 const productSlider = new Slider('#product-slider', productSliderOpts);

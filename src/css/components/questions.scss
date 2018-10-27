@@ -9,22 +9,141 @@
 
 	&__nav {
 		position: relative;
-		min-height: 40px;
+		min-height: 72px;
+
+		button {
+			cursor: pointer;
+			background: none;
+			padding: 0;
+			text-transform: uppercase;
+			font-size: 16px;
+
+			&:focus {
+				outline: none;
+			}
+		}
 
 		.slick-prev {
 			position: absolute;
-			top: 0;
+			top: 13px;
 			left: 0;
+
+			&::before {
+				background-color: $color--gray;
+				width: 46px;
+				height: 46px;
+				line-height: 46px;
+				display: inline-block;
+				content: '\f054';
+				font-family: "Font Awesome 5 Free";
+				color: #ffffff;
+				font-size: 30px;
+				font-weight: 700;
+				position: relative;
+				vertical-align: middle;
+				margin-right: 8px;
+				transform: rotateY(180deg);
+			}
 		}
 
 		.slick-next {
 			position: absolute;
-			top: 0;
+			top: 13px;
 			right: 0;
+
+			&::after {
+				background-color: $color--purple;
+				width: 46px;
+				height: 46px;
+				line-height: 46px;
+				display: inline-block;
+				content: '\f054';
+				font-family: "Font Awesome 5 Free";
+				color: #ffffff;
+				font-size: 30px;
+				font-weight: 700;
+				position: relative;
+				vertical-align: middle;
+				margin-left: 8px;
+			}
 		}
 	}
 
 	&__btn--hidden {
 		display: none !important;
+	}
+
+	&__step-list {
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-between;
+		margin-bottom: 10px;
+	}
+
+	&__step {
+		width: calc((100% - 56px) / 5);
+		flex: 0 0 calc((100% - 56px) / 5);
+		background-color: $color--purple-light;
+		color: #ffffff;
+		font-size: 18px;
+		text-align: center;
+		min-height: 40px;
+		line-height: 40px;
+		position: relative;
+	}
+
+	&__step:not(:first-child) {
+		&::before {
+			width: 0;
+			height: 0;
+			border-style: solid;
+			border-width: 0 13px 20px 0;
+			border-color: transparent $color--purple-light transparent transparent;
+			position: absolute;
+			right: calc(100% - 1px);
+			top: 0;
+			display: block;
+			content: '';
+		}
+		&::after {
+			width: 0;
+			height: 0;
+			border-style: solid;
+			border-width: 0 0 20px 13px;
+			border-color: transparent transparent $color--purple-light transparent;
+			position: absolute;
+			right: calc(100% - 1px);
+			bottom: 0;
+			display: block;
+			content: '';
+		}
+	}
+
+	&__step--active {
+		background-color: $color--purple;
+
+		&:not(:first-child)::before {
+			border-color: transparent $color--purple transparent transparent;
+		}
+
+		&:not(:first-child)::after {
+			border-color: transparent transparent $color--purple transparent;
+		}
+	}
+
+	&__step-tri {
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 19px 0 19px 13px;
+		border-color: transparent transparent transparent $color--purple-light;
+		position: absolute;
+		top: 1px;
+		left: calc(100% - 1px);
+		display: block;
+	}
+
+	&__step--active &__step-tri {
+		border-color: transparent transparent transparent $color--purple;
 	}
 }

@@ -21,5 +21,53 @@
 		.product__price {
 			color: $color--green;
 		}
+
+		.answer__check:checked + label::after {
+			color: $color--green;
+		}
+
+		.headline__title, .headline__subtitle, .questions__headline {
+			color: $color--green;
+		}
+
+		.product__show-more i {
+			color: $color--green;
+		}
+
+		.questions__step {
+			background-color: $color--green-light;
+		}
+
+		.questions__nav .slick-next::after {
+			background-color: $color--green;
+		}
+
+		.questions__step-tri {
+			border-color: transparent transparent transparent $color--green-light;
+		}
+
+		.questions__step--active {
+			background-color: $color--green;
+		}
+
+		.questions__step--active .questions__step-tri {
+			border-color: transparent transparent transparent $color--green;
+		}
+
+		.questions__step:not(:first-child)::before {
+			border-color: transparent $color--green-light transparent transparent;
+		}
+
+		.questions__step:not(:first-child)::after {
+			border-color: transparent transparent $color--green-light transparent;
+		}
+
+		.questions__step--active:not(:first-child)::before {
+			border-color: transparent $color--green transparent transparent;
+		}
+
+		.questions__step--active:not(:first-child)::after {
+			border-color: transparent transparent $color--green transparent;
+		}
 	}
 }

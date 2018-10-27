@@ -7,11 +7,20 @@
 		min-height: 187px;
 		position: relative;
 		padding-top: 46px;
+
+		@include media('<md') {
+			min-height: 140px;
+			padding-top: 32px;
+		}
 	}
 
 	&__text {
 		background-color: rgba(255,255,255,.6);
 		padding: 16px 0;
+
+		@include media('<md') {
+			padding: 18px 0;
+		}
 	}
 
 	&__title {
@@ -19,10 +28,18 @@
 		font-weight: 300;
 		font-size: 46px;
 		color: $color--purple;
+
+		@include media('<md') {
+			font-size: 26px;
+		}
 	}
 
 	&__subtitle {
 		color: $color--purple;
 		font-size: 18px;
+
+		@include media('<md') {
+			font-size: 14px;
+		}
 	}
 }

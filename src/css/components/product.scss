@@ -6,10 +6,28 @@
 	justify-content: space-between;
 	align-items: flex-start;
 
+	@include media('<md') {
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+
 	&__gfx {
 		width: 41%;
 		flex: 0 0 41%;
 		margin-right: 4%;
+
+		@include media('<lg') {
+			width: 38%;
+			flex: 0 0 38%;
+			margin-right: 2%;
+		}
+
+		@include media('<md') {
+			width: 100%;
+			flex: 0 0 100%;
+			margin-right: 0;
+			margin-bottom: 10px;
+		}
 
 		img {
 			max-width: 100%;
@@ -21,6 +39,13 @@
 		width: 32%;
 		flex: 0 0 32%;
 		margin-right: 2%;
+
+		@include media('<md') {
+			width: 100%;
+			flex: 0 0 100%;
+			margin-right: 0;
+			margin-bottom: 10px;
+		}
 	}
 
 	&__name {
@@ -35,6 +60,16 @@
 		width: 21%;
 		flex: 0 0 21%;
 		text-align: center;
+
+		@include media('<lg') {
+			width: 26%;
+			flex: 0 0 26%;
+		}
+
+		@include media('<md') {
+			width: 100%;
+			flex: 0 0 100%;
+		}
 	}
 
 	&__price-box {
@@ -56,5 +91,40 @@
 		color: $color--purple;
 		font-weight: 700;
 		font-size: 20px;
+	}
+
+	&__attr {
+		font-size: 14px;
+		position: relative;
+		margin-bottom: 2px;
+
+		&::before {
+			display: inline-block;
+			position: relative;
+			content: '';
+			vertical-align: middle;
+			width: 14px;
+			height: 15px;
+			background: url('../img/tick-none.png');
+			top: -1px;
+			margin-right: 5px;
+		}
+
+		&--enabled::before {
+			background: url('../img/tick-green.png');
+		}
+	}
+
+	&__show-more {
+		text-decoration: none;
+		font-weight: 700;
+		font-size: 14px;
+		color: $color--text;
+
+		i {
+			font-size: 18px;
+			color: $color--purple;
+			vertical-align: middle;
+		}
 	}
 }

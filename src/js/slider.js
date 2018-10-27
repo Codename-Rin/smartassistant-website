@@ -8,7 +8,6 @@ class Slider {
 	}
 
 	init() {
-		console.log(this.options.appendArrows);
 		$(this.slider).on('afterChange', (event, slick, currentSlide) => {
 			this.checkSlide(currentSlide, slick.slideCount);
 		});
@@ -18,7 +17,6 @@ class Slider {
 	checkSlide(slide, maxSlides) {
 		const prev = this.options.appendArrows.find('.slick-prev');
 		const next = this.options.appendArrows.find('.slick-next');
-		console.log(slide, maxSlides, next, prev);
 		if(slide === 0) {
 			prev.addClass('questions__btn--hidden');
 		} else {
